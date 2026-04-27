@@ -1,0 +1,79 @@
+{
+	"Bread Loaf": {
+		"type": "product",
+		"category": "Baked Goods",
+		"unit": "loaf",
+		"default_amount": 1,
+		"serving_size": 1,
+		"serving_container": "foil wrapper",
+		"base_value": 12,
+		"stackable": true,
+		"consumption_type": "food"
+	},
+	"Pancake": {
+		"type": "product",
+		"category": "Breakfast",
+		"unit": "piece",
+		"default_amount": 1,
+		"serving_size": 1,
+		"serving_container": "plate",
+		"base_value": 10,
+		"stackable": true,
+		"consumption_type": "food"
+	},
+	"Warm Milk": {
+		"type": "product",
+		"category": "Beverage",
+		"unit": "cup",
+		"default_amount": 1,
+		"serving_size": 250,
+		"serving_container": "cup",
+		"base_value": 7,
+		"stackable": true,
+		"consumption_type": "drink"
+	},
+	"Hard Boiled Egg": {
+		"type": "product",
+		"category": "Breakfast",
+		"unit": "piece",
+		"default_amount": 1,
+		"serving_size": 1,
+		"serving_container": "plate",
+		"base_value": 6,
+		"stackable": true,
+		"consumption_type": "food"
+	},
+	"Seasoned Egg": {
+		"type": "product",
+		"category": "Breakfast",
+		"unit": "piece",
+		"default_amount": 1,
+		"serving_size": 2,
+		"serving_container": "plate",
+		"base_value": 6,
+		"stackable": true,
+		"consumption_type": "food"
+	},
+	"Scrambled Egg": {
+		"type": "product",
+		"category": "Breakfast",
+		"unit": "portion",
+		"default_amount": 1,
+		"serving_size": 1,
+		"serving_container": "plate",
+		"base_value": 9,
+		"stackable": true,
+		"consumption_type": "food"
+	},
+	"Bread Slice": {
+		"type": "product",
+		"category": "Baked Goods",
+		"unit": "slice",
+		"default_amount": 1,
+		"serving_size": 1,
+		"serving_container": "plate",
+		"base_value": 3,
+		"stackable": true,
+		"consumption_type": "food"
+	}
+}

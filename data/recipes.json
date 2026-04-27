@@ -1,0 +1,79 @@
+{
+	"Boiled Egg": {
+		"inputs": {
+			"Egg": 1
+		},
+		"outputs": {
+			"Hard Boiled Egg": 1
+		},
+		"appliance": "boiler"
+	},
+	"Seasoned Egg": {
+		"inputs": {
+			"Hard Boiled Egg": 1
+		},
+		"outputs": {
+			"Seasoned Egg": 1
+		},
+		"appliance": "prep_station"
+	},
+	"Scrambled Egg": {
+		"inputs": {
+			"Egg": 2
+		},
+		"outputs": {
+			"Scrambled Egg": 1
+		},
+		"appliance": "pan"
+	},
+	"Warm Milk": {
+		"inputs": {
+			"Milk": 250
+		},
+		"outputs": {
+			"Warm Milk": 1
+		},
+		"appliance": "boiler"
+	},
+	"Bread Loaf": {
+		"inputs": {
+			"Flour": 500,
+			"Milk": 200,
+			"Egg": 1
+		},
+		"outputs": {
+			"Bread Loaf": 1
+		},
+		"appliance": "oven"
+	},
+	"Bread Slice": {
+		"inputs": {
+			"Bread Loaf": 1
+		},
+		"outputs": {
+			"Bread Slice": 8
+		},
+		"appliance": "knife_station"
+	},
+	"Pancake": {
+		"inputs": {
+			"Flour": 100,
+			"Milk": 150,
+			"Egg": 1,
+			"Sugar": 20
+		},
+		"outputs": {
+			"Pancake": 1
+		},
+		"appliance": "pan"
+	},
+	"Pancake Stack": {
+		"inputs": {
+			"Pancake": 3
+		},
+		"outputs": {
+			"Pancake Stack": 1
+		},
+		"appliance": "plate_station"
+	}
+}

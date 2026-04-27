@@ -1,0 +1,56 @@
+{
+	"Milk": {
+		"type": "ingredient",
+		"category": "Dairy",
+		"unit": "ml",
+		"default_amount": 1000,
+		"base_value": 5,
+		"stackable": true,
+		"consumption_type": "food"
+	},
+	"Egg": {
+		"type": "ingredient",
+		"category": "Poultry",
+		"unit": "egg",
+		"default_amount": 1,
+		"base_value": 3,
+		"stackable": true,
+		"consumption_type": "food"
+	},
+	"Flour": {
+		"type": "ingredient",
+		"category": "Grain",
+		"unit": "g",
+		"default_amount": 1000,
+		"base_value": 4,
+		"stackable": true,
+		"consumption_type": "none"
+	},
+	"Salt": {
+		"type": "ingredient",
+		"category": "Seasoning",
+		"unit": "g",
+		"default_amount": 1000,
+		"base_value": 1,
+		"stackable": true,
+		"consumption_type": "none"
+	},
+	"Sugar": {
+		"type": "ingredient",
+		"category": "Sweetener",
+		"unit": "g",
+		"default_amount": 1000,
+		"base_value": 2,
+		"stackable": true,
+		"consumption_type": "none"
+	},
+	"Baking Powder": {
+		"type": "ingredient",
+		"category": "Leavening",
+		"unit": "g",
+		"default_amount": 100,
+		"base_value": 2,
+		"stackable": true,
+		"consumption_type": "none"
+	}
+}

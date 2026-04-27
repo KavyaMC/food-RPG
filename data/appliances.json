@@ -1,0 +1,22 @@
+{
+	"pan": {
+		"type": "cooking",
+		"supports": [
+			"Egg",
+			"Pancake"
+		]
+	},
+	"oven": {
+		"type": "baking",
+		"supports": [
+			"Bread Loaf"
+		]
+	},
+	"boiler": {
+		"type": "heating",
+		"supports": [
+			"Egg",
+			"Milk"
+		]
+	}
+}
