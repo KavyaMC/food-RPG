@@ -8,7 +8,7 @@ from PySide6.QtWidgets import (
 	QLabel
 )
 from PySide6.QtCore import Qt, QTimer
-from .new_game_wizzard import NewGameWizard
+from new_game_wizzard import NewGameWizard
 
 import sys
 
@@ -44,7 +44,7 @@ class MainWindow(QMainWindow):
 		self.alert_label = QLabel("")
 		self.alert_label.setAlignment(Qt.AlignCenter)
 		self.alert_label.setVisible(False)
-		self.alert_label.setAccessibleDescription(".... alert!")
+		self.alert_label.setAccessibleDescription("... alert!")
 		self.alert_label.setFocusPolicy(Qt.StrongFocus)
 
 		# Add widgets
@@ -60,8 +60,6 @@ class MainWindow(QMainWindow):
 		# Initial focus
 		start_btn.setFocus()
 
-	# ---------------- ALERT SYSTEM ----------------
-
 	def announce(self, message, duration=2000):
 		self.alert_label.setText(message)
 		self.alert_label.setAccessibleName(message)
@@ -74,7 +72,6 @@ class MainWindow(QMainWindow):
 		self.setFocus()
 
 	# ---------------- START FLOW ----------------
-
 	def new_game(self):
 		self.announce("Starting a new game.")
 
