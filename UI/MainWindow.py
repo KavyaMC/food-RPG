@@ -8,7 +8,7 @@ from PySide6.QtWidgets import (
 	QLabel
 )
 from PySide6.QtCore import Qt, QTimer
-from new_game_wizzard import NewGameWizard
+from .new_game_wizzard import NewGameWizard
 
 import sys
 
