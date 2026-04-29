@@ -1,37 +1,36 @@
 import os
+import csv
 
 def show_cafe_menu(menu):
 		print("\n===== Café Menu =====")
 		for i, (item, price) in enumerate(menu.items(), start=1):
 			print(f"{i}. {item} — ₹{price}")
 		print("=====================\n")
-
 def load_menu(file_name):
 	menu={}
-	with open(file_name, "r") as f:
-		for line in f:
-			line=line.strip()
-			if not line:
+	with open(file_name, "r", newline='') as f:
+		reader=csv.reader(f)
+		for row in reader:
+			if not row:
 				continue
-			parts=line.split(",")
-			item_name=parts[0].strip()
-			price=int(parts[1].strip())
+			item_name=row[0].strip()
+			price=int(row[1].strip())
 			menu[item_name]=price
 	return menu
 
 
 def write_default_menu(file_name):
 	default_items=[
-		"bread loaf,20",
-		"pancake,10",
-		"hard boiled egg,6",
-		"seasoned egg,8",
-		"scrambled egg,10",
-		"warm milk,6"
+		["bread loaf", "20"],
+		["pancake", "10"],
+		["hard boiled egg", "6"],
+		["seasoned egg", "8"],
+		["scrambled egg", "10"],
+		["warm milk", "6"]
 	]
-	with open(file_name, "w") as f:
-		for item in default_items:
-			f.write(item+"\n")
+	with open(file_name, "w", newline='') as f:
+		writer=csv.writer(f)
+		writer.writerows(default_items)
 	return "menu reset"
 
 
